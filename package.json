@@ -1,0 +1,39 @@
+{
+  "name": "website-me.com",
+  "description": "NextJS, Typescript, React, Tailwind CSS Personal Page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/$USER/me.com"
+  },
+  "version": "0.0.1",
+  "author": {
+    "name": "YOUR NAME",
+    "email": "YOUR EMAIL",
+    "url": "YOUR LINKEDIN",
+    "organization": true
+  },
+  "keywords": [
+    "aws",
+    "nextjs",
+    "react",
+    "tailwindcss"
+  ],
+  "engines": {
+    "node": ">= 22.11.0"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run lint && pnpm run test && next dev",
+    "build": "pnpm run lint && pnpm run test && NEXT_TURBOPACK_TRACING=1 next dev --turbo",
+    "start": "pnpm run build && pnpm serve out",
+    "lint": "pnpm eslint .",
+    "lint:fix": "pnpm eslint . --fix",
+    "test": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.ts --coverage",
+    "test:watch": "node --trace-deprecation ./node_modules/jest/bin/jest.js  --config jest.config.ts --watch --coverage",
+    "type": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
