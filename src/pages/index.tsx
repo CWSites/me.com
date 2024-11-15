@@ -8,7 +8,10 @@ const Home: FC = () => {
       <title>Your Name</title>
     </Head>
     <main className="flex flex-col items-center justify-between min-h-0 p-2">
+      I am Batman
     </main>
     </>
   )
 }
+
+export default Home
